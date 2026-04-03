@@ -277,6 +277,22 @@
       color: rgba(255, 255, 255, 0.38);
       font-weight: 500;
     }
+
+    .url-inline {
+      font-family: ui-monospace, "Cascadia Code", "SF Mono", Consolas, monospace;
+      font-size: 0.72rem;
+      color: rgba(255, 255, 255, 0.45);
+      word-break: break-all;
+    }
+
+    .footer-note a {
+      color: #f87171;
+      text-decoration: none;
+    }
+
+    .footer-note a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -286,6 +302,7 @@
       Your ShowTickets build runs inside the phone frame below (same origin as this page).
       <a href="index.html" target="_blank" rel="noopener">Open full page</a>
       · <a href="iphone_preview.html">Refresh this page</a>
+      · <a id="preview-self-link" href="iphone_preview.html">This preview URL</a> <span id="preview-url-copy" class="url-inline"></span>
     </p>
     <div class="callout callout--amber">
       <strong>App not updating after code changes?</strong> The iframe loads <code>index.html</code> / <code>main.dart.js</code>.
@@ -326,12 +343,25 @@
   </div>
 
   <p class="footer-note">
-    <strong>Dev:</strong> flutter run -d web-server --web-hostname=localhost --web-port=8080<br>
-    then open http://localhost:8080/iphone_preview.html<br><br>
-    <strong>Static:</strong> flutter build web → serve build/web → /iphone_preview.html
+    <strong>Dev:</strong> <code>flutter run -d web-server --web-hostname=localhost --web-port=8080</code>
+    (if 8080 is busy, use another port, e.g. <code>9100</code>)<br>
+    Then open <a id="footer-preview-link" href="iphone_preview.html">iPhone preview</a>
+    <span id="footer-full-url"></span> — must be the <strong>same host and port</strong> as <code>flutter run</code> so the iframe loads <code>index.html</code> from the same origin.<br><br>
+    <strong>Static:</strong> <code>flutter build web</code> → serve <code>build/web</code> →
+    <a href="iphone_preview.html">iphone_preview.html</a>
   </p>
   <script>
     (function () {
+      var previewPageUrl = new URL('iphone_preview.html', window.location.href).href.split('?')[0];
+      var el = document.getElementById('preview-url-copy');
+      if (el) el.textContent = '(' + previewPageUrl + ')';
+      var selfLink = document.getElementById('preview-self-link');
+      if (selfLink) selfLink.href = previewPageUrl;
+      var footerLink = document.getElementById('footer-preview-link');
+      var footerUrl = document.getElementById('footer-full-url');
+      if (footerUrl) footerUrl.textContent = ': ' + previewPageUrl;
+      if (footerLink) footerLink.href = previewPageUrl;
+
       var frame = document.getElementById('app-frame');
 
       function loadAppUrl() {

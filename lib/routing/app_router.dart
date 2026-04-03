@@ -19,17 +19,26 @@ final GlobalKey<NavigatorState> _rootKey = GlobalKey<NavigatorState>();
 /// go_router's default [StatefulShellRoute.indexedStack] wraps inactive branches in
 /// [Offstage], which reports **zero** size. The stack can then size to 0×0, so the
 /// active tab's [Navigator] gets no height (blank body with a visible bottom bar).
-/// Filling the stack avoids that while keeping state for all branches.
+///
+/// We use a [Stack] with full-size children instead, but **inactive branches must not
+/// paint on top**: [IgnorePointer] only skips hit tests; painting order is still
+/// last-child-wins, so without reordering the last branch (e.g. Profile) would cover
+/// every tab while taps went through to the selected navigator below.
 Widget _shellBranchStack(
   BuildContext context,
   StatefulNavigationShell navigationShell,
   List<Widget> children,
 ) {
   final i = navigationShell.currentIndex;
+  final order = <int>[
+    for (var j = 0; j < children.length; j++)
+      if (j != i) j,
+    i,
+  ];
   return Stack(
     fit: StackFit.expand,
     children: [
-      for (var j = 0; j < children.length; j++)
+      for (final j in order)
         Positioned.fill(
           child: IgnorePointer(
             ignoring: j != i,
