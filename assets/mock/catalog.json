@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 2,
+  "datasetId": "showtickets-bms-style-v2",
+  "cityLabel": "Hyderabad",
+  "homePromo": {
+    "imageRef": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&q=80",
+    "headline": "Unlock ₹500 off* on LIVE gigs",
+    "ctaLabel": "Apply Now",
+    "deepLinkEventId": "e_concert",
+    "deepLinkRoute": "liveEvents"
+  },
+  "banners": [
+    {
+      "id": "bn_1",
+      "headline": "The Fast Lane to FUN",
+      "subhead": "20+ Bank Offers · Zero Booking Fees* · On 150+ water parks and theme parks!",
+      "imageRef": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1200&q=80",
+      "deepLinkMovieId": "m_4"
+    },
+    {
+      "id": "bn_2",
+      "headline": "Live in your city",
+      "subhead": "Stand-up & concerts near you",
+      "imageRef": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=1200&q=80",
+      "deepLinkEventId": "e_concert"
+    },
+    {
+      "id": "bn_3",
+      "headline": "Movies you will love",
+      "subhead": "New releases every Friday",
+      "imageRef": "https://images.unsplash.com/photo-1489599849927-2ee91cede1ba?w=1200&q=80",
+      "deepLinkMovieId": "m_1"
+    }
+  ],
+  "rails": [
+    {
+      "id": "rail_now",
+      "title": "Recommended Movies",
+      "movieIds": ["m_4", "m_2", "m_3", "m_1"]
+    },
+    {
+      "id": "rail_soon",
+      "title": "Coming soon",
+      "subtitle": "Pre-book opening week",
+      "movieIds": ["m_5", "m_6"]
+    },
+    {
+      "id": "rail_events",
+      "title": "Popular experiences",
+      "subtitle": "This month",
+      "eventIds": ["e_concert", "e_1", "e_3"]
+    }
+  ],
+  "venues": [
+    {
+      "id": "v_1",
+      "name": "AMB Cinemas: Gachibowli",
+      "area": "Hyderabad",
+      "logoRef": "https://images.unsplash.com/photo-1489599849927-2ee91cede1ba?w=64&q=60",
+      "nonCancellable": true
+    },
+    {
+      "id": "v_2",
+      "name": "PVR: Inorbit, Cyberabad",
+      "area": "Hyderabad",
+      "logoRef": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=64&q=60",
+      "nonCancellable": true
+    },
+    {
+      "id": "v_3",
+      "name": "Prasads Multiplex: Hyderabad",
+      "area": "Hyderabad",
+      "logoRef": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=64&q=60",
+      "nonCancellable": true
+    },
+    {
+      "id": "v_4",
+      "name": "ART CINEMAS: Vanasthalipuram",
+      "area": "Hyderabad",
+      "nonCancellable": true
+    },
+    {
+      "id": "v_mayabazar",
+      "name": "Urban Mayabazar: LB Nagar",
+      "area": "Hyderabad"
+    }
+  ],
+  "movies": [
+    {
+      "id": "m_1",
+      "title": "The Super Mario Galaxy Movie",
+      "genre": "Adventure, Animation, Comedy, Family, Fantasy",
+      "durationMins": 98,
+      "certification": "UA 7+",
+      "languages": "ENGLISH, HINDI, +1",
+      "rating": 9.1,
+      "ratingCount": 22400,
+      "engagementUsesLikes": false,
+      "releaseDateLabel": "Releasing on 3 Apr, 2026",
+      "formatsLine": "2D, IMAX 2D, 3D, DOLBY CINEMA 2D, DOLBY CINEMA 3D, +6",
+      "formatOptions": ["2D", "IMAX 2D", "3D", "DOLBY CINEMA 2D", "4DX"],
+      "synopsis": "The Super Mario Galaxy Movie is an animated film based on the world of Super Mario Bros., and follows Mario on an adventure across the galaxy.",
+      "posterRef": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600&q=80",
+      "heroRef": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1200&q=80",
+      "tags": ["Family"],
+      "trailerCount": 6,
+      "trendingTicketsLine": "6.06K tickets booked in last 24 hours",
+      "cast": [
+        { "name": "Chris Pratt", "imageRef": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80" },
+        { "name": "Anya Taylor-Joy", "imageRef": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80" },
+        { "name": "Charlie Day", "imageRef": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80" },
+        { "name": "Jack Black", "imageRef": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80" }
+      ]
+    },
+    {
+      "id": "m_2",
+      "title": "Biker",
+      "genre": "Action, Drama, Romantic, Sports",
+      "durationMins": 162,
+      "certification": "UA13+",
+      "languages": "TELUGU, MALAYALAM, +1",
+      "rating": 8.8,
+      "ratingCount": 37900,
+      "engagementUsesLikes": true,
+      "releaseDateLabel": "Releasing on 3 Apr, 2026",
+      "formatsLine": "2D, 4DX, DOLBY CINEMA 2D",
+      "formatOptions": ["2D", "DOLBY CINEMA 2D", "4DX"],
+      "synopsis": "A family's pride and conflict collide as one man chases motocross glory driven by grit, spirit, and heart. What begins as a race becomes a test of bonds.",
+      "posterRef": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=600&q=80",
+      "heroRef": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1200&q=80",
+      "tags": ["Trending"],
+      "trailerCount": 1,
+      "trendingTicketsLine": "8.28K tickets booked in last 24 hours",
+      "cast": [
+        { "name": "Sharwanand", "imageRef": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80" },
+        { "name": "Rajasekhar", "imageRef": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&q=80" },
+        { "name": "Malavika Nair", "imageRef": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80" },
+        { "name": "Brahmanandam", "imageRef": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&q=80" }
+      ]
+    },
+    {
+      "id": "m_3",
+      "title": "Raakaasa",
+      "genre": "Thriller",
+      "durationMins": 135,
+      "certification": "UA",
+      "languages": "Telugu",
+      "rating": 4.1,
+      "ratingCount": 22600,
+      "engagementUsesLikes": true,
+      "releaseDateLabel": "Now showing",
+      "formatsLine": "2D, 3D",
+      "synopsis": "A tense thriller set in the highlands.",
+      "posterRef": "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=600&q=80",
+      "heroRef": "https://images.unsplash.com/photo-1535016120720-40c646be5580?w=1200&q=80",
+      "tags": ["New"]
+    },
+    {
+      "id": "m_4",
+      "title": "Dhurandhar The Revenge",
+      "genre": "Action · Thriller",
+      "durationMins": 145,
+      "certification": "UA",
+      "languages": "Hindi, Telugu",
+      "rating": 9.5,
+      "ratingCount": 458000,
+      "engagementUsesLikes": false,
+      "releaseDateLabel": "Now showing",
+      "formatsLine": "2D, IMAX",
+      "synopsis": "An officer returns to settle scores in a city on edge.",
+      "posterRef": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600&q=80",
+      "heroRef": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1200&q=80",
+      "tags": ["Blockbuster"]
+    },
+    {
+      "id": "m_5",
+      "title": "Project Hail Mary",
+      "genre": "Sci‑Fi",
+      "durationMins": 128,
+      "certification": "UA",
+      "languages": "English",
+      "rating": 0,
+      "ratingCount": 0,
+      "synopsis": "One astronaut. One impossible mission.",
+      "posterRef": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80",
+      "heroRef": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80",
+      "tags": ["Coming soon"]
+    },
+    {
+      "id": "m_6",
+      "title": "Kitchen Orchestra",
+      "genre": "Documentary",
+      "durationMins": 88,
+      "certification": "U",
+      "languages": "English",
+      "rating": 0,
+      "ratingCount": 0,
+      "synopsis": "Chefs who compose music from pots and pans.",
+      "posterRef": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&q=80",
+      "heroRef": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80",
+      "tags": ["Festival"]
+    }
+  ],
+  "events": [
+    {
+      "id": "e_concert",
+      "title": "Hemachandra live in concert at Mayabazar - Apr 4",
+      "category": "Music Shows",
+      "venueId": "v_mayabazar",
+      "dateLabel": "Sat 04 Apr 2026 | 08:30 PM",
+      "priceFrom": 499,
+      "imageRef": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&q=80",
+      "synopsis": "An intimate night of melody and energy with Hemachandra — live at Urban Mayabazar.",
+      "appBarTitle": "Hemachandra live in concert at...",
+      "venueLine": "Urban Mayabazar: LB Nagar",
+      "dateTimeSubtitle": "Sat 04 Apr | 08:30 PM",
+      "interestedCount": 80,
+      "eventTags": ["Club Gigs", "Concerts", "Music Shows"],
+      "durationLabel": "4 Hours",
+      "ageGroup": "All age groups",
+      "languageLabel": "Telugu",
+      "showTypeLabel": "Regional",
+      "fillingFast": true,
+      "ticketTiers": [
+        { "name": "FEMALE STAG ENTRY ONLY", "priceInr": 499, "fastFilling": true },
+        { "name": "MALE STAG ENTRY ONLY", "priceInr": 599, "fastFilling": false },
+        { "name": "COUPLE ENTRY ONLY", "priceInr": 999, "fastFilling": true },
+        { "name": "GROUP OF 3 PAX ENTRY ONLY", "priceInr": 1299, "fastFilling": true },
+        { "name": "COUPLE TABLE VIP", "priceInr": 5000, "fastFilling": false },
+        { "name": "TABLE OF 4 FULL COVER", "priceInr": 12000, "fastFilling": false },
+        { "name": "TABLE OF 6 PAX FULL COVER", "priceInr": 18000, "fastFilling": false }
+      ]
+    },
+    {
+      "id": "e_1",
+      "title": "Laugh Circuit · Open Mic Finals",
+      "category": "Comedy",
+      "venueId": "v_1",
+      "dateLabel": "Sat, 12 Apr · 8:00 PM",
+      "priceFrom": 499,
+      "imageRef": "https://images.unsplash.com/photo-1585699324551-f6c309eedeca?w=800&q=80",
+      "synopsis": "Ten finalists, one trophy, zero mercy from the judges.",
+      "interestedCount": 120,
+      "eventTags": ["Comedy Shows", "Stand-up"],
+      "durationLabel": "2 Hours",
+      "ageGroup": "16+",
+      "languageLabel": "English",
+      "showTypeLabel": "Live",
+      "ticketTiers": [
+        { "name": "GENERAL", "priceInr": 499, "fastFilling": true },
+        { "name": "VIP", "priceInr": 899, "fastFilling": false }
+      ]
+    },
+    {
+      "id": "e_3",
+      "title": "City Food Walk",
+      "category": "Experience",
+      "venueId": "v_3",
+      "dateLabel": "Sun, 20 Apr · 5:00 PM",
+      "priceFrom": 1299,
+      "imageRef": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80",
+      "synopsis": "Guided tasting across six hidden kitchens.",
+      "ticketTiers": [
+        { "name": "STANDARD", "priceInr": 1299, "fastFilling": false }
+      ]
+    }
+  ],
+  "movieShowtimes": {
+    "m_1": [
+      { "id": "st_m1_1", "venueId": "v_1", "time24": "10:10", "format": "2D", "priceFrom": 220, "screenLabel": "VIP SCREEN" },
+      { "id": "st_m1_2", "venueId": "v_1", "time24": "10:25", "format": "2D", "priceFrom": 220 },
+      { "id": "st_m1_3", "venueId": "v_1", "time24": "10:55", "format": "2D", "priceFrom": 240 },
+      { "id": "st_m1_4", "venueId": "v_2", "time24": "22:30", "format": "PXL", "priceFrom": 450, "screenLabel": "PXL", "visualTier": "gold", "visitedHint": true },
+      { "id": "st_m1_5", "venueId": "v_3", "time24": "20:15", "format": "2D", "priceFrom": 280, "screenLabel": "BARCO FLAGSHIP LASER" },
+      { "id": "st_m1_6", "venueId": "v_3", "time24": "23:15", "format": "2D", "priceFrom": 300, "visualTier": "green" }
+    ],
+    "m_2": [
+      { "id": "st_m2_1", "venueId": "v_2", "time24": "22:30", "format": "PXL", "priceFrom": 450, "screenLabel": "PXL", "visualTier": "gold", "visitedHint": true }
+    ],
+    "m_3": [
+      { "id": "st_m3_1", "venueId": "v_1", "time24": "13:00", "format": "3D", "priceFrom": 320 },
+      { "id": "st_m3_2", "venueId": "v_1", "time24": "21:30", "format": "3D", "priceFrom": 340 }
+    ],
+    "m_4": [
+      { "id": "st_m4_1", "venueId": "v_3", "time24": "12:15", "format": "2D", "priceFrom": 150 }
+    ]
+  }
+}
